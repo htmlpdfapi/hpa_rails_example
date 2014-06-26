@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML PDF API - Rails Example</title>
+    <style type="text/css">
+      body {
+        color: #555;
+        background: #FFFFFF; 
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        width: 21cm;  
+        margin: 0 auto; 
+      }
+      section, p { page-break-inside: avoid; }
+      h1, h2, h3, h4 { font-weight: normal; color: #049CDB; margin: 1.8em 0 0.8em; }
+      h1 { background: #049CDB; color: #fff; padding: 4px 8px; }
+      h2 { border-bottom: 2px solid #049CDB; }
+      ul, ol { color: #777; }
+      body.content { height: 29.7cm; }
+      body.content p::first-letter { font-size: 1.1em; }
+      img { vertical-align: middle; }
+      header { color: #404040; border-bottom: 1px solid #049CDB; padding: 10px 0; position: relative; } 
+      header p { position: absolute; bottom: 10px; right: 0; font-size: 20px; margin: 0; }
+      .image { border: 10px solid #eee; }
+      .image.fl { margin: 0 14px 10px 0; float: left; }
+      .image.fr { margin: 0 0 10px 14px; float: right; }
+      footer  {border-top: 1px solid #049CDB; padding: 10px 0; }
+      footer .page {float: right; color: #049CDB; font-size: 14px; }
+      footer .credits { color: #999; font-size: 12px; }
+    </style>
+  </head>
+  <%= yield %>
+</html>
