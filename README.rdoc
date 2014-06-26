@@ -1,16 +1,16 @@
 == Rails 4.1 sample application on using hpa-ruby gem
 
-1. Clone repository 
+Clone repository 
 
   $ git clone https://github.com/htmlpdfapi/hpa_rails_example.git
   $ cd hpa_example
   $ bundle install
 
 
-2. Set your api token ( create a user account at {HTML PDF API}[https://htmlpdfapi.com/registration] in order to get your token ) inside config/application.rb
+Set your api token ( create a user account at {HTML PDF API}[https://htmlpdfapi.com/registration] in order to get your token ) inside config/application.rb
 
   Hpa.api_token = "<your token>"
 
-3. Run server
+Run server
   
   $ rails s
